@@ -1,5 +1,5 @@
 {
-  "bytes": {
+  "bytecount": {
     "mean": 10000000,
     "stdev": 5000
   },
