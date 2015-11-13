@@ -12,7 +12,7 @@ setup(
             'rest-server = restserver.app:main',
         ]
     },
-    package_data={'restserver': ['templates/*']},
+    package_data={'restserver': ['*.json']},
     license='LICENSE',
     description='TrueSight Pulse Meter Plugin REST Target',
     long_description=open('README.txt').read(),

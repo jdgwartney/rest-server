@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 from flask import Flask, jsonify
+import os
 import time
 from random import gauss
 from json import load
 
 app = Flask(__name__)
 
-with open("configuration.json") as f:
+with open(os.path.join(os.path.dirname(__file__), "configuration.json")) as f:
     configuration = load(f)
 
 bytecount = configuration['bytecount']
@@ -56,5 +57,8 @@ def get_tasks():
     return jsonify(get_performance_metrics())
 
 
-if __name__ == '__main__':
+def main():
     app.run(debug=True)
+
+if __name__ == '__main__':
+    main()
