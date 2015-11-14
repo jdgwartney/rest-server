@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='rest-server',
-    version='0.1.0',
+    version='0.2.2',
     url="http://github.io/boundary/rest-server",
     author='David Gwartney',
     author_email='david_gwartney@bmc.com',
@@ -12,7 +12,7 @@ setup(
             'rest-server = restserver.app:main',
         ]
     },
-    package_data={'restserver': ['*.json']},
+    package_data={'restserver': ['*.json', 'rest.*']},
     license='LICENSE',
     description='TrueSight Pulse Meter Plugin REST Target',
     long_description=open('README.txt').read(),
